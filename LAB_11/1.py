@@ -15,8 +15,7 @@ def search_records(pattern):
 
         return records
 
-    except psycopg2.Error as e:
-        print("Error while connecting to PostgreSQL", e)
+
     finally:
         if connection:
             cur.close()
